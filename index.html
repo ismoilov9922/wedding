@@ -1,149 +1,127 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parizoda & Alisher To‘y Taklifi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sardorbek & Muslimaxon to'y taklifi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #fff8e7, #ffffff);
-      color: #333;
       margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfdfb;
+      color: #333;
       text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #b8860b;
-    }
-    h2 {
-      color: #8b4513;
-    }
-    input, textarea {
+    header img {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      max-height: 400px;
+      object-fit: cover;
     }
-    button {
-      background-color: #b8860b;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+    h1, h2, h3 {
+      font-family: 'Great Vibes', cursive;
+      color: #50704e;
     }
     .section {
-      margin-top: 40px;
+      padding: 2rem 1rem;
     }
-    .message {
-      text-align: left;
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 6px;
-      background: #f9f9f9;
+    .card {
+      background: #fff;
+      margin: 1rem auto;
+      max-width: 400px;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-    iframe {
-      border-radius: 10px;
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #3eaf4f;
+      color: white;
+      padding: 0.75rem 1.5rem;
       border: none;
-      width: 100%;
-      height: 250px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .countdown {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+    .countdown div {
+      font-size: 1.2rem;
+    }
+    .radio-group {
+      text-align: left;
+      margin-top: 1rem;
+    }
+    .radio-group input {
+      margin-right: 0.5rem;
+    }
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .footer-buttons .btn {
+      background-color: #00c853;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>👰 Parizoda & 🤵 Alisher</h1>
-    <p>Hayotimizdagi eng muhim kunga sizni mehmon sifatida taklif qilamiz!</p>
 
-    <div class="section">
-      <h2>📅 Sana va vaqt:</h2>
-      <p>10-iyul, 2025 — soat 18:00</p>
+  <header>
+    <img src="your_wedding_image.jpg" alt="To'y rasmi">
+  </header>
 
-      <h2>📍 Joylashuv:</h2>
-      <p>"Navro'z" to‘yxonasi, Toshkent, Yakkasaroy</p>
-      <iframe src="https://www.google.com/maps/embed?..."></iframe>
+  <section class="section">
+    <h2>Hurmatli mehmonlar!</h2>
+    <p>Sizni Sardorbek va Muslimaxonning nikoh to'yining faxriy mehmoni bo'lishga taklif qilamiz. Qalbimizga yaqin do'stlar bilan ushbu quvonchli kunda birga bo'lishni istaymiz.</p>
+  </section>
+
+  <section class="section card">
+    <h3>To'y haqida</h3>
+    <p><strong>To'y egalari:</strong> Sardorbek & Muslimaxon</p>
+    <p><strong>Boshlanish vaqti:</strong> 23.11.2024 | 17:00</p>
+    <div class="countdown">
+      <div>00 kun</div>
+      <div>00 soat</div>
+      <div>00 daqiqa</div>
+      <div>00 soniya</div>
     </div>
+    <p><strong>Manzil:</strong> Farg'ona, Obodlik 10, Afrosiyob to'yxonasi</p>
+    <a href="#" class="btn">Karta orqali ochish</a>
+  </section>
 
-    <div class="section">
-      <h2>🗓 To‘y Dasturi</h2>
-      <ul style="text-align:left; display:inline-block;">
-        <li>18:00 – Mehmonlarni kutib olish</li>
-        <li>18:30 – Nikoh marosimi</li>
-        <li>19:30 – Tantanali ovqat</li>
-        <li>21:00 – Raqs va ko‘ngilochar dastur</li>
-      </ul>
+  <section class="section card">
+    <h3>To'yga kelyapsizmi?</h3>
+    <div class="radio-group">
+      <label><input type="radio" name="attend"> Ha, men yolg'iz boraman</label><br>
+      <label><input type="radio" name="attend"> Turmush o'rtog'im bilan boraman</label><br>
+      <label><input type="radio" name="attend"> Afsuski, kela olmayman</label>
     </div>
+    <a href="#" class="btn">Javob berish</a>
+  </section>
 
-    <div class="section">
-      <h2>✅ To‘yda qatnashishingizni tasdiqlang</h2>
-      <form id="rsvpForm">
-        <input type="text" placeholder="Ismingiz" required />
-        <button type="submit">Tasdiqlash</button>
-      </form>
-      <p id="rsvpResult"></p>
+  <section class="section card">
+    <h3>Ezgu tilaklar</h3>
+    <p><strong>Dilshodbek tilagi:</strong><br>
+      Ikkala yosh baxtli bo'lishsin. Eng namunali oila bo'lishsin. Farzandlari kamoli 5 bo'lsin.
+    </p>
+    <p><small>09.11.2024</small></p>
+    <a href="#" class="btn">Barcha tilaklarni ochish</a>
+  </section>
+
+  <section class="section">
+    <p>Yaqinda to'y qilasizmi? <br><a href="#">Sayt taklifnomasiga buyurtma bering</a></p>
+    <div class="footer-buttons">
+      <a href="#" class="btn">🎵 Musiqa</a>
+      <a href="#" class="btn">Tilak qoldirish</a>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>💌 Tabrik yo‘llang</h2>
-      <input type="text" id="guestName" placeholder="Ismingiz" />
-      <textarea id="guestMsg" placeholder="Tabrik matni..."></textarea>
-      <button onclick="submitMessage()">Yuborish</button>
-      <div id="messageList"></div>
-    </div>
-
-    <div class="section">
-      <h2>🎁 Sovg‘alar uchun karta</h2>
-      <p>Humo: <strong>9860 1234 5678 9012</strong></p>
-    </div>
-
-    <div class="section">
-      <h2>⏳ To‘yga qolgan vaqt</h2>
-      <p id="countdown">Hisoblanmoqda...</p>
-    </div>
-  </div>
-
-  <script>
-    // RSVP form
-    document.getElementById('rsvpForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = this.querySelector('input').value;
-      document.getElementById('rsvpResult').textContent = `Rahmat, ${name}! Ismingiz ro‘yxatga olindi ✅`;
-      this.reset();
-    });
-
-    // Tabrik xabari
-    function submitMessage() {
-      const name = document.getElementById('guestName').value;
-      const msg = document.getElementById('guestMsg').value;
-      if (!name || !msg) return;
-      const div = document.createElement('div');
-      div.className = 'message';
-      div.innerHTML = `<strong>${name}</strong><p>${msg}</p>`;
-      document.getElementById('messageList').appendChild(div);
-      document.getElementById('guestName').value = '';
-      document.getElementById('guestMsg').value = '';
-    }
-
-    // Countdown
-    const weddingDate = new Date('2025-07-10T18:00:00').getTime();
-    setInterval(() => {
-      const now = new Date().getTime();
-      const distance = weddingDate - now;
-      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const s = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById('countdown').textContent = `${d} kun, ${h} soat, ${m} daqiqa, ${s} soniya`;
-    }, 1000);
-  </script>
 </body>
 </html>
