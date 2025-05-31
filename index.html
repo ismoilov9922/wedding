@@ -125,11 +125,19 @@
     <div class="section rsvp">
       <h2>To‘yga kelyapsizmi?</h2>
       <form id="rsvpForm" onsubmit="return false">
-        <label><input type="radio" name="rsvp" value="Yolg'iz boraman"> Ha, men yolg‘iz boraman</label><br>
+        <label><input type="radio" name="rsvp" value="Yolg'iz boraman"> Ha, men boraman</label><br> 
         <label><input type="radio" name="rsvp" value="Turmush o‘rtog‘im bilan boraman"> Turmush o‘rtog‘im bilan boraman</label><br>
-        <label><input type="radio" name="rsvp" value="Kela olmayman"> Afsuski, kela olmayman</label><br>
+        <label><input type="radio" name="rsvp" value="Kela olmayman"> Afsuski, men bora olmayman</label><br> 
         <button type="submit" class="btn" onclick="submitRSVP()">Javob berish</button>
       </form>
+    </div>
+
+    <div class="section">
+      <h2>Biz bilan bog‘laning</h2>
+      <p>
+        <strong>Telegram:</strong> <a href="https://t.me/ismoilov_d22" target="_blank">@ismoilov_d22</a><br>
+        <strong>Telefon:</strong> <a href="tel:+998997564368">+998 99 756 43 68</a>
+      </p>
     </div>
 
     <div class="section">
@@ -191,6 +199,7 @@
     function submitRSVP() {
       const name = prompt("Ismingizni kiriting:");
       if (!name) return alert("Iltimos, ismingizni kiriting.");
+      
       const options = document.getElementsByName("rsvp");
       let selected = null;
       for (const opt of options) {
@@ -199,10 +208,13 @@
           break;
         }
       }
+      
       if (!selected) return alert("Iltimos, bir variantni tanlang.");
+      
       const message = `To‘y RSVP:%0A👤 Ismi: ${name}%0A📌 Tanlovi: ${selected}`;
-      const url = `https://t.me/your_username?text=${message}`;
-      window.open(url, '_blank');
+      const telegramUrl = `https://t.me/share/url?url=&text=${message}&to=@ismoilov_d22`;
+      
+      window.open(telegramUrl, '_blank');
     }
   </script>
 </body>
