@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Do'stmurod & Maftuna To'y Taklifnomasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do'stmurod & Maftuna - To‘y Taklifnomasi</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Do'stmurod & Maftuna - To‘y Taklifnomasi" />
+  <meta property="og:description" content="Sizni Do'stmurod va Maftunaning 19-iyuldagi to‘yiga taklif qilamiz. Marhamat qilib biz bilan birga bo‘ling!" />
+  <meta property="og:image" content="https://ismoilov9922.github.io/wedding/wedding_3.jpg" />
+  <meta property="og:url" content="https://ismoilov9922.github.io/wedding/" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Do'stmurod & Maftuna - To‘y Taklifnomasi" />
+  <meta name="twitter:description" content="19-iyuldagi to‘y marosimimizda sizni kutib qolamiz. Birga baxtni nishonlaylik!" />
+  <meta name="twitter:image" content="https://ismoilov9922.github.io/wedding/wedding_3.jpg" />
+
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: url('/mnt/data/0f21ab0b-ebe4-4ece-8f82-2a3742e89d3e.png') no-repeat center top/cover;
+      background: url('wedding_2.jpg') no-repeat center top/cover;
       background-color: #fffaf8;
       color: #333;
       line-height: 1.6;
@@ -31,9 +45,7 @@
       color: #ff7a00;
       margin-bottom: 10px;
     }
-    .section {
-      margin: 40px 0;
-    }
+    .section { margin: 40px 0; }
     .btn {
       background-color: #3a8f3a;
       color: white;
@@ -46,13 +58,8 @@
       text-decoration: none;
       display: inline-block;
     }
-    .btn:hover {
-      background-color: #2e732e;
-    }
-    .image {
-      width: 100%;
-      border-radius: 10px;
-    }
+    .btn:hover { background-color: #2e732e; }
+    .image { width: 100%; border-radius: 10px; }
     .countdown-wrapper {
       display: flex;
       justify-content: center;
@@ -70,13 +77,8 @@
       align-items: center;
       color: #222;
     }
-    .countdown-item span:first-child {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .countdown-item span:last-child {
-      font-size: 14px;
-    }
+    .countdown-item span:first-child { font-size: 20px; font-weight: bold; }
+    .countdown-item span:last-child { font-size: 14px; }
     .footer {
       margin-top: 40px;
       font-size: 14px;
@@ -87,31 +89,24 @@
       font-weight: bold;
       color: #e07b39;
     }
-    a.btn {
-      text-decoration: none !important;
-    }
+    a.btn { text-decoration: none !important; }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="wedding_2.jpg" alt="To'y rasmi" class="image">
-
+    <img src="wedding_3.jpg" alt="To'y rasmi" class="image">
     <div class="section">
       <h1>Do'stmurod & Maftuna</h1>
-      <p><strong>Hurmatli mehmon!</strong><br>
-      Sizni quvonch ila nikoh tantanamizga taklif qilamiz.<br>
-      Ushbu unutilmas kunimizda biz bilan birga bo‘lishingizdan mamnun bo‘lamiz.</p>
+      <p><strong>Hurmatli mehmon!</strong><br>Sizni nikoh tantanamizga taklif qilamiz.<br>Biz bilan ushbu quvonchli kunni baham ko‘ring.</p>
     </div>
-
     <div class="section">
       <h2>To‘y tafsilotlari</h2>
       <p class="big-date">19-iyul, 2025</p>
       <p><strong>Vaqt:</strong> 19:00 da<br>
-         <strong>Manzil:</strong> Navoiy viloyati, Xatirchi tumani</p>
-         <strong>Joy:</strong> Dilshoda to‘yxonasi<br>
+         <strong>Manzil:</strong> Navoiy viloyati, Xatirchi tumani<br>
+         <strong>Joy:</strong> Dilshoda to‘yxonasi</p>
       <a href="https://yandex.uz/maps/org/228351531215/gallery/?ll=65.970182%2C40.029042&z=19" target="_blank" class="btn">Manzilni xaritada ochish</a>
     </div>
-
     <div class="section">
       <h2>Qolgan vaqt</h2>
       <div class="countdown-wrapper">
@@ -121,32 +116,21 @@
         <div class="countdown-item"><span id="seconds">00</span><span>soniya</span></div>
       </div>
     </div>
-
     <div class="section rsvp">
       <h2>To‘yga kelyapsizmi?</h2>
       <form id="rsvpForm" onsubmit="return false">
-        <label><input type="radio" name="rsvp" value="Yolg'iz boraman"> Ha, men boraman</label><br> 
+        <label><input type="radio" name="rsvp" value="Yolg'iz boraman"> Ha, men boraman</label><br>
         <label><input type="radio" name="rsvp" value="Turmush o‘rtog‘im bilan boraman"> Turmush o‘rtog‘im bilan boraman</label><br>
-        <label><input type="radio" name="rsvp" value="Kela olmayman"> Afsuski, men bora olmayman</label><br> 
+        <label><input type="radio" name="rsvp" value="Kela olmayman"> Afsuski, men bora olmayman</label><br>
         <button type="submit" class="btn" onclick="submitRSVP()">Javob berish</button>
       </form>
     </div>
-
-    <div class="section">
-      <h2>Biz bilan bog‘laning</h2>
-      <p>
-        <strong>Telegram:</strong> <a href="https://t.me/ismoilov_d22" target="_blank">@ismoilov_d22</a><br>
-        <strong>Telefon:</strong> <a href="tel:+998997564368">+998 99 756 43 68</a>
-      </p>
-    </div>
-
     <div class="section">
       <h2>Ezgu tilak</h2>
       <blockquote style="font-style: italic; color: #555;">
         "Sizga go‘zal muhabbat, baxtli kunlar va quvonchli oilaviy hayot tilaymiz. Har bir tong siz uchun baxt keltirsin!"
       </blockquote>
     </div>
-
     <div class="section">
       <h2>To‘y she’ri</h2>
       <p style="white-space: pre-line;">
@@ -163,11 +147,14 @@
         Yoqar ular baxt chirog‘ini!
       </p>
     </div>
-
     <div class="section">
       <a href="https://ismoilov9922.github.io/wedding/" download class="txt">PDF versiyani yuklab olish</a>
     </div>
-
+    <div class="section">
+      <h2>Bog'lanish</h2>
+      <p><strong>📞 Telefon:</strong> +998 97 756 43 68<br>
+         <strong>💬 Telegram:</strong> <a href="https://t.me/ismoilov_d22" target="_blank">@ismoilov_d22</a></p>
+    </div>
     <div class="footer">
       &copy; 2025 Do‘stmurod & Maftuna to‘y sahifasi
     </div>
@@ -199,7 +186,6 @@
     function submitRSVP() {
       const name = prompt("Ismingizni kiriting:");
       if (!name) return alert("Iltimos, ismingizni kiriting.");
-      
       const options = document.getElementsByName("rsvp");
       let selected = null;
       for (const opt of options) {
@@ -208,13 +194,10 @@
           break;
         }
       }
-      
       if (!selected) return alert("Iltimos, bir variantni tanlang.");
-      
       const message = `To‘y RSVP:%0A👤 Ismi: ${name}%0A📌 Tanlovi: ${selected}`;
-      const telegramUrl = `https://t.me/share/url?url=&text=${message}&to=@ismoilov_d22`;
-      
-      window.open(telegramUrl, '_blank');
+      const url = `https://t.me/ismoilov_d22?text=${message}`;
+      window.open(url, '_blank');
     }
   </script>
 </body>
