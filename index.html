@@ -24,9 +24,9 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      font-family: 'Alex Brush', cursive;
-      font-size: 3.5em;
-      color: #b48e5c;
+      font-family: 'Poppins', sans-serif;
+      font-size: 4em;
+      color: #e07b39;
       margin-bottom: 10px;
     }
     .section {
@@ -41,6 +41,8 @@
       font-size: 16px;
       cursor: pointer;
       margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
     }
     .btn:hover {
       background-color: #2e732e;
@@ -81,7 +83,10 @@
     .big-date {
       font-size: 2em;
       font-weight: bold;
-      color: #b48e5c;
+      color: #e07b39;
+    }
+    a.btn {
+      text-decoration: none !important;
     }
   </style>
 </head>
@@ -182,10 +187,9 @@
         }
       }
       if (!selected) return alert("Iltimos, bir variantni tanlang.");
-      const message = `To‘y RSVP:
-👤 Ismi: ${name}
-📌 Tanlovi: ${selected}`;
-      window.open(`https://t.me/share/url?url=https://wedding-page&text=${encodeURIComponent(message)}&to=@ismoilov_d22`, '_blank');
+      const message = `To‘y RSVP:%0A👤 Ismi: ${name}%0A📌 Tanlovi: ${selected}`;
+      const url = `https://t.me/your_username?text=${message}`;
+      window.open(url, '_blank');
     }
   </script>
 </body>
