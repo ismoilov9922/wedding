@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Do'stmurod & Maftuna To'y Taklifnomasi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -24,8 +24,8 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 3.2em;
+      font-family: 'Alex Brush', cursive;
+      font-size: 3.5em;
       color: #b48e5c;
       margin-bottom: 10px;
     }
@@ -78,11 +78,16 @@
       font-size: 14px;
       color: #888;
     }
+    .big-date {
+      font-size: 2em;
+      font-weight: bold;
+      color: #b48e5c;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="https://i.imgur.com/CYVNK1d.jpg" alt="To'y rasmi" class="image">
+    <img src="wedding.jpg" alt="To'y rasmi" class="image">
 
     <div class="section">
       <h1>Do'stmurod & Maftuna</h1>
@@ -93,8 +98,8 @@
 
     <div class="section">
       <h2>To‘y tafsilotlari</h2>
-      <p><strong>Sana:</strong> 19-iyul, 2025<br>
-         <strong>Vaqt:</strong> 19:00 da<br>
+      <p class="big-date">19-iyul, 2025</p>
+      <p><strong>Vaqt:</strong> 19:00 da<br>
          <strong>Joy:</strong> Dilshoda to‘yxonasi<br>
          <strong>Manzil:</strong> Navoiy viloyati, Xatirchi tumani, Ismoilovlar oilasi</p>
       <a href="https://yandex.uz/maps/org/228351531215/gallery/?ll=65.970182%2C40.029042&z=19" target="_blank" class="btn">Manzilni xaritada ochish</a>
@@ -112,11 +117,11 @@
 
     <div class="section rsvp">
       <h2>To‘yga kelyapsizmi?</h2>
-      <form onsubmit="return false">
-        <label><input type="radio" name="rsvp"> Ha, men yolg‘iz boraman</label><br>
-        <label><input type="radio" name="rsvp"> Turmush o‘rtog‘im bilan boraman</label><br>
-        <label><input type="radio" name="rsvp"> Afsuski, kela olmayman</label><br>
-        <button type="submit" class="btn" onclick="alert('Javobingiz saqlandi!')">Javob berish</button>
+      <form id="rsvpForm" onsubmit="return false">
+        <label><input type="radio" name="rsvp" value="Yolg'iz boraman"> Ha, men yolg‘iz boraman</label><br>
+        <label><input type="radio" name="rsvp" value="Turmush o‘rtog‘im bilan boraman"> Turmush o‘rtog‘im bilan boraman</label><br>
+        <label><input type="radio" name="rsvp" value="Kela olmayman"> Afsuski, kela olmayman</label><br>
+        <button type="submit" class="btn" onclick="submitRSVP()">Javob berish</button>
       </form>
     </div>
 
@@ -163,8 +168,25 @@
       document.getElementById("minutes").innerText = textMinute.toString().padStart(2, '0');
       document.getElementById("seconds").innerText = textSecond.toString().padStart(2, '0');
     };
-
     setInterval(countdown, 1000);
+
+    function submitRSVP() {
+      const name = prompt("Ismingizni kiriting:");
+      if (!name) return alert("Iltimos, ismingizni kiriting.");
+      const options = document.getElementsByName("rsvp");
+      let selected = null;
+      for (const opt of options) {
+        if (opt.checked) {
+          selected = opt.value;
+          break;
+        }
+      }
+      if (!selected) return alert("Iltimos, bir variantni tanlang.");
+      const message = `To‘y RSVP:
+👤 Ismi: ${name}
+📌 Tanlovi: ${selected}`;
+      window.open(`https://t.me/share/url?url=https://wedding-page&text=${encodeURIComponent(message)}&to=@ismoilov_d22`, '_blank');
+    }
   </script>
 </body>
 </html>
